@@ -9,7 +9,7 @@ function Header() {
     {id:3 , path:'/Login' , name:'Log in'}
   ]
   return (
-    <header className='bg-black w-full fixed'>
+    <header className='bg-[#0f0a05] w-full fixed'>
       <div className='container mx-auto flex justify-between items-center py-5'>
         <img src={logo} alt="" />
         <ul className='flex items-center gap-10 text-white'>

@@ -3,10 +3,14 @@ import ProductList from './ProductList'
 
 function Home() {
   return (
-    <div>
-      <h1>home</h1>
+    <section className='w-full bg-[#0f0a05]'>
+      <div className='container mx-auto py-[50px]'>
+        <h1 className='text-white text-[40px] mdl:text-[70px] font-bold h-[400px] flex items-center justify-center text-center'>
+          Home of WATCH IT Originals and Exclusives premieres.
+        </h1>
+      </div>
       <ProductList />
-    </div>
+    </section>
   )
 }
 
