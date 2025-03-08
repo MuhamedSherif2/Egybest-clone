@@ -14,7 +14,7 @@ function ProductList() {
   }
   return (
     <section>
-      <div className="container mx-auto grid grid-cols-1 mdl:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="container mx-auto grid grid-cols-1 mdl:grid-cols-2 lg:grid-cols-3 gap-5 pb-10">
         {
           products.map((product) => (
             <Link to={`/products/${product.id}`} key={product.id} onClick={() => handleClick(product)}

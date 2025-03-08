@@ -12,20 +12,20 @@ function ProductDetails() {
 
   return (
     <>
-      <section className='bg-[#0f0a05] w-full h-screen pt-[100px]'>
+      <section className='bg-[#0f0a05] w-full h-auto p-[100px]'>
         {
           filterProduct.map((item) => (
             <div key={item.id} className='container mx-auto'>
               <img
                 src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
                 alt={item.title}
-                className='w-[400px]'
+                className='w-[380px] rounded-md'
               />
-              <div>
-                <h3>{item.title}</h3>
-                <p>{item.overview}</p>
-                <p>{item.release_date}</p>
-                <button onClick={() => handleAddtoCart(item)} className='bg-black text-white'>My List</button>
+              <div className='w-[70%] mt-5'>
+                <h3 className='text-white font-bold text-[30px]'>{item.title}</h3>
+                <p className='text-white text-[20px]'>{item.overview}</p>
+                <p className='text-white'>{item.release_date}</p>
+                <button onClick={() => handleAddtoCart(item)} className='bg-white text-[18px] font-bold rounded-md py-2 px-2 mt-5 transition duration-500 hover:bg-yellow-500 hover:text-white'>Add To My List</button>
               </div>
             </div>
           ))
