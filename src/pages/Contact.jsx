@@ -13,7 +13,7 @@ function Contact() {
     };
     return (
         <section className='w-full bg-[#0f0a05] pt-[100px] h-screen flex flex-col justify-center items-center'>
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} className='w-full h-screen'>
                 <table className='flex flex-col'>
                     <thead className='flex justify-center mx-auto pb-12'>
                         <tr>
@@ -23,8 +23,8 @@ function Contact() {
                         </tr>
                     </thead>
 
-                    <tbody className='w-[500px]'>
-                        <tr className='flex flex-row justify-between w-full mb-5'>
+                    <tbody className='w-auto mdl:w-[500px] flex flex-col justify-center mx-auto '>
+                        <tr className='flex flex-col mdl:flex-row justify-between w-full mb-5'>
                             <th>
                                 <label htmlFor="name" className='text-white text-[20px]'>Name</label>
                             </th>
@@ -32,35 +32,32 @@ function Contact() {
                                 <input type="text"
                                     id='name'
                                     placeholder='Please Enter Your Name'
-                                    className='rounded p-1 w-[250px] outline-0'
+                                    className='rounded p-1 w-[300px] mdl:w-[250px] outline-0 flex m-auto'
                                 />
                             </td>
                         </tr>
-                        <tr className='flex flex-col mdl:flex-row mdl:justify-between w-full mb-5'>
-                            <th>
-                                <label htmlFor="email" className='text-white text-[20px]'>E-mail</label>
-                            </th>
+                        <tr className='flex flex-col mdl:flex-row justify-between w-full mb-5'>                            <th>
+                            <label htmlFor="email" className='text-white text-[20px]'>E-mail</label>
+                        </th>
                             <td>
                                 <input type="email"
                                     id='email'
                                     placeholder='Entre Your E-mail'
-                                    className='rounded p-1 w-[250px] outline-0'
-                                />
+                                    className='rounded p-1 w-[300px] mdl:w-[250px] outline-0 flex m-auto' />
                             </td>
                         </tr>
 
-                        <tr className='flex flex-col mdl:flex-row mdl:justify-between items-center w-full mb-5'>
-                            <th>
-                                <label htmlFor="Message" className='text-white text-[20px]'>Message</label>
-                            </th>
+                        <tr className='flex flex-col mdl:flex-row justify-between w-full mb-5'>                            <th>
+                            <label htmlFor="Message" className='text-white text-[20px]'>Message</label>
+                        </th>
                             <td>
-                                <textarea name="message" className='rounded p-1 w-[250px] outline-0' />
+                                <textarea name="message" className='rounded p-1 w-[300px] mdl:w-[250px] outline-0 flex m-auto' />
                             </td>
                         </tr>
                     </tbody>
 
-                    <tfoot className='flex justify-center mx-auto pt-8 w-[500px]'>
-                        <tr className='flex flex-row justify-evenly w-full mb-5'>
+                    <tfoot className='flex justify-center mx-auto pt-8 w-auto mdl:w-[500px]'>
+                        <tr className='flex flex-col mdl:flex-row justify-evenly w-full mb-5'>
                             <th>
                                 <input type='submit' className='bg-white rounded text-[20px] px-5 py-1 cursor-pointer transition duration-500 hover:bg-yellow-500 hover:text-white' value='Send' />
                             </th>

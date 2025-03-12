@@ -31,7 +31,7 @@ function Register() {
   }
   return (
     <section className='w-full bg-[#0f0a05] pt-[100px] h-screen flex flex-col justify-center items-center'>
-      <form onSubmit={signUp} className=''>
+      <form onSubmit={signUp} className='w-full h-screen'>
         <table className='flex flex-col'>
           <thead className='flex justify-center mx-auto pb-12'>
             <tr>
@@ -40,8 +40,8 @@ function Register() {
               </td>
             </tr>
           </thead>
-          <tbody className='w-[500px]'>
-            <tr className='flex flex-row justify-between w-full mb-5'>
+          <tbody className='w-auto mdl:w-[500px] flex flex-col justify-center mx-auto '>
+            <tr className='flex flex-col mdl:flex-row justify-between w-full mb-5'>
               <th>
                 <label htmlFor="name" className='text-white text-[20px]'>Name</label>
               </th>
@@ -50,12 +50,11 @@ function Register() {
                   value={name} id='name'
                   placeholder='Please Enter Your Name'
                   onChange={(e) => setName(e.target.value)}
-                  className='rounded p-1 w-[250px] outline-0'
-                />
+                  className='rounded p-1 w-[300px] mdl:w-[250px] outline-0 flex m-auto' />
               </td>
             </tr>
 
-            <tr className='flex flex-row justify-between w-full mb-5'>
+            <tr className='flex flex-col mdl:flex-row justify-between w-full mb-5'>
               <th>
                 <label htmlFor="email" className='text-white text-[20px]'>E-mail</label>
               </th>
@@ -65,12 +64,11 @@ function Register() {
                   id='email'
                   placeholder='Please Enter Your E-mail'
                   onChange={(e) => setEmail(e.target.value)}
-                  className='rounded p-1 w-[250px] outline-0'
-                />
+                  className='rounded p-1 w-[300px] mdl:w-[250px] outline-0 flex m-auto' />
               </td>
             </tr>
 
-            <tr className='flex flex-row justify-between w-full mb-5'>
+            <tr className='flex flex-col mdl:flex-row justify-between w-full mb-5'>
               <th>
                 <label htmlFor="password" className='text-white text-[20px]'>Password</label>
               </th>
@@ -80,12 +78,11 @@ function Register() {
                   id='password'
                   placeholder='Please Enter Your Password'
                   onChange={(e) => setFristPassword(e.target.value)}
-                  className='rounded p-1 w-[250px] outline-0'
-                />
+                  className='rounded p-1 w-[300px] mdl:w-[250px] outline-0 flex m-auto' />
               </td>
             </tr>
 
-            <tr className='flex flex-col mdl:flex-row mdl:justify-between w-full mb-5'>
+            <tr className='flex flex-col mdl:flex-row justify-between w-full mb-5'>
               <th>
                 <label htmlFor="confirm" className='text-white text-[20px]'>Confirm Password</label>
               </th>
@@ -95,14 +92,13 @@ function Register() {
                   id='confirm'
                   placeholder='Confirm Your Password'
                   onChange={(e) => setConfirmPassword(e.target.value)}
-                  className='rounded p-1 w-[250px] outline-0'
-                />
+                  className='rounded p-1 w-[300px] mdl:w-[250px] outline-0 flex m-auto' />
               </td>
             </tr>
           </tbody>
 
-          <tfoot className='flex justify-center mx-auto pt-12'>
-            <tr>
+          <tfoot className='flex justify-center mx-auto pt-8 w-auto mdl:w-[500px]'>
+            <tr className='flex flex-col mdl:flex-row justify-evenly w-full mb-5'>
               <td>
                 <input type='submit' className='bg-white rounded text-[20px] px-5 py-1 cursor-pointer' value='Sign Up' />
               </td>

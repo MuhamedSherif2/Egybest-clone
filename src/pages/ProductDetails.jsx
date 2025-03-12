@@ -15,13 +15,13 @@ function ProductDetails() {
       <section className='bg-[#0f0a05] w-full h-auto p-[100px]'>
         {
           filterProduct.map((item) => (
-            <div key={item.id} className='container mx-auto'>
+            <div key={item.id} className=''>
               <img
                 src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
                 alt={item.title}
                 className='w-[380px] rounded-md'
               />
-              <div className='w-[70%] mt-5'>
+              <div className='mt-5'>
                 <h3 className='text-white font-bold text-[30px]'>{item.title}</h3>
                 <p className='text-white text-[20px]'>{item.overview}</p>
                 <p className='text-white'>{item.release_date}</p>
