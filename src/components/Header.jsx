@@ -34,7 +34,7 @@ function Header() {
   return (
     <header className='bg-[#0f0a05] w-full fixed'>
       <div className='container mx-auto flex justify-between items-center py-5'>
-        <img src={logo} alt="" />
+        <img src={logo} className='w-[180px] lg:w-[250px]' />
         <ul className='hidden lg:flex items-center gap-10 text-white'>
           {
             lists.map((list) => (

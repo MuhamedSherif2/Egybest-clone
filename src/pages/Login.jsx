@@ -34,7 +34,7 @@ function Login() {
             </tr>
           </thead>
           
-          <tbody className='w-[500px] m-auto'>
+          <tbody className='w-auto mdl:w-[500px] flex flex-col justify-center mx-auto '>
             <tr className='flex flex-col mdl:flex-row justify-between w-full mb-5'>
               <th>
                 <label htmlFor="email" className='text-white text-[20px]'>E-mail</label>
@@ -65,7 +65,7 @@ function Login() {
             </tr>
           </tbody>
 
-          <tfoot className='flex justify-center mx-auto pt-8 w-[500px]'>
+          <tfoot className='flex justify-center mx-auto pt-8 w-auto mdl:w-[500px]'>
             <tr className='flex flex-col mdl:flex-row justify-evenly w-full mb-5'>
               <th>
                 <input type='submit' className='bg-white flex m-auto rounded w-[220px] text-[20px] px-5 py-1 cursor-pointer transition duration-500 hover:bg-yellow-500 hover:text-white' value='Log in' />
