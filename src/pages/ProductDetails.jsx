@@ -19,7 +19,7 @@ function ProductDetails() {
               <img
                 src={`https://image.tmdb.org/t/p/w500${item.poster_path}`}
                 alt={item.title}
-                className='w-[380px] rounded-md'
+                className='rounded-md'
               />
               <div className='mt-5'>
                 <h3 className='text-white font-bold text-[30px]'>{item.title}</h3>
